@@ -21,7 +21,6 @@ public class EmployeeService implements IEmployeeService{
 		
 
 		Employee employee=employeeRepository.findByEmployeeId(employeeId);
-		System.out.println(employee);
 
 		if(employee==null) {
 			throw new InvalidEmployeeIdException();

@@ -1,0 +1,28 @@
+2023-04-22 21:42:08,642 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-22 21:42:09,008 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 13592 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-22 21:42:09,012 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-22 21:42:12,068 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 21:42:12,429 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 226 ms. Found 1 JPA repository interfaces.
+2023-04-22 21:42:14,209 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-22 21:42:14,229 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-22 21:42:14,235 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-22 21:42:14,237 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-22 21:42:14,408 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-22 21:42:14,408 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 5039 ms
+2023-04-22 21:42:14,856 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 21:42:15,065 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-22 21:42:16,719 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-22 21:42:20,186 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60ae7cf2
+2023-04-22 21:42:20,197 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-22 21:42:20,875 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-22 21:42:24,462 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 21:42:24,513 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 21:42:27,261 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 21:42:28,304 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-22 21:42:28,940 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-22 21:42:29,049 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-22 21:42:29,091 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 21.551 seconds (process running for 25.444)
+2023-04-22 22:19:22,967 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 22:19:23,569 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2023-04-22 22:19:29,836 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-10] Completed initialization in 5893 ms
+2023-04-22 22:19:36,403 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-10] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
