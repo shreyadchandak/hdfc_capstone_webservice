@@ -6,13 +6,13 @@ public class EmployeeDTO {
 	
 	private long employeeId;
 	private String employeeName;
-	private LocalDate dateOfBirth;
+	private byte[] dateOfBirth;
 	
 	public EmployeeDTO() {
 		super();
 	}
 
-	public EmployeeDTO(long employeeId, String employeeName, LocalDate dateOfBirth) {
+	public EmployeeDTO(long employeeId, String employeeName, byte[] dateOfBirth) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
@@ -35,14 +35,13 @@ public class EmployeeDTO {
 		this.employeeName = employeeName;
 	}
 
-	public LocalDate getDateOfBirth() {
+	public byte[] getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(LocalDate dateOfBirth) {
+	public void setDateOfBirth(byte[] dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
-	
-	
-	
+
 }
+

@@ -7,6 +7,7 @@ import com.hdfc.capstone.employee.dto.EmployeeDTO;
 import com.hdfc.capstone.employee.entity.Employee;
 import com.hdfc.capstone.employee.exception.InvalidEmployeeIdException;
 import com.hdfc.capstone.employee.repo.EmployeeRepository;
+import com.hdfc.capstone.employee.utils.AESUtils;
 
 import jakarta.transaction.Transactional;
 
@@ -17,7 +18,7 @@ public class EmployeeService implements IEmployeeService{
 	EmployeeRepository employeeRepository;
 	
 	@Transactional
-	public EmployeeDTO getEmployee(long employeeId) throws InvalidEmployeeIdException {
+	public EmployeeDTO getEmployee(long employeeId) throws Exception {
 		
 
 		Employee employee=employeeRepository.findByEmployeeId(employeeId);
@@ -29,12 +30,12 @@ public class EmployeeService implements IEmployeeService{
 		return toDTO(employee);
 	}
 	
-	public EmployeeDTO toDTO(Employee employee) {
+	public EmployeeDTO toDTO(Employee employee) throws Exception {
 		
 		EmployeeDTO employeeDTO=new EmployeeDTO();
 		employeeDTO.setEmployeeId(employee.getEmployeeId());
 		employeeDTO.setEmployeeName(employee.getEmployeeName());
-		employeeDTO.setDateOfBirth(employee.getDateOfBirth());
+		employeeDTO.setDateOfBirth(AESUtils.encrypt(employee.getDateOfBirth()));
 		return employeeDTO;
 	}
 }

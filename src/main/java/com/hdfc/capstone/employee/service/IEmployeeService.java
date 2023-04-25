@@ -8,6 +8,6 @@ import com.hdfc.capstone.employee.exception.InvalidEmployeeIdException;
 @Service
 public interface IEmployeeService {
 
-	public EmployeeDTO getEmployee(long employeeId) throws InvalidEmployeeIdException ;
+	public EmployeeDTO getEmployee(long employeeId) throws InvalidEmployeeIdException, Exception ;
 
 }

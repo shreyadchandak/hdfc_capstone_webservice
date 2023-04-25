@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hdfc.capstone.employee.dto.EmployeeDTO;
-import com.hdfc.capstone.employee.exception.InvalidEmployeeIdException;
 import com.hdfc.capstone.employee.service.IEmployeeService;
 
 @RestController
@@ -17,7 +16,7 @@ public class EmployeeController {
 	@Autowired
 	IEmployeeService service;
 	@GetMapping("/getById/{employeeId}")
-	public EmployeeDTO getEmployeebyId(@PathVariable long employeeId) throws InvalidEmployeeIdException {
+	public EmployeeDTO getEmployeebyId(@PathVariable long employeeId) throws Exception {
 		
 		return service.getEmployee(employeeId);
 	}
